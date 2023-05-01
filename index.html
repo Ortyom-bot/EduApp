@@ -15,217 +15,81 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" defer
         crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/index.css">
     <title>EduApp</title>
+    
 </head>
 
 <body>
-    <header>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#Courses" role="button"
-                    aria-expanded="false">Courses</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="pages/c++.html">C++</a></li>
-                    <li><a class="dropdown-item" href="pages/python.html">Python</a></li>
-                    <li><a class="dropdown-item" href="pages/seti.html">Computer networks</a></li>
-                    <li><a class="dropdown-item" href="pages/nodejs.html">Node JS</a></li>
-                    <li><a class="dropdown-item" href="pages/web.html">HTML5&CSS3</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#Contacts">Contacts</a>
-            </li>
-        </ul>
-    </header>
-
     <main>
-        <div>
-            <div class="col-lg-8 col-md-10">
-                <div class="card mb-3 border-primary" style="max-width: 65rem;">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="https://laptrinhcanban.com/c/lap-trinh-c-co-ban/gioi-thieu-ngon-ngu-c/su-khac-biet-giua-c-c++-csharp/c++.png"
-                                class="card-img rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseExample" aria-expanded="false"
-                                    aria-controls="collapseExample">
-                                    C++
-                                </button>
-                                </p>
-                                <div class="collapse" id="collapseExample">
-                                    <div class="card card-body">
-                                        C++ — компилируемый, статически типизированный язык программирования общего
-                                        назначения.
-                                        Поддерживает такие парадигмы программирования, как процедурное программирование,
-                                        объектно-ориентированное программирование, обобщённое программирование. Язык
-                                        имеет
-                                        богатую
-                                        стандартную библиотеку, которая включает в себя распространённые контейнеры и
-                                        алгоритмы,
-                                        ввод-вывод, регулярные выражения, поддержку многопоточности и другие
-                                        возможности. C++
-                                        сочетает свойства как высокоуровневых, так и низкоуровневых языков.
-                                    </div>
-                                </div>
+        <div class="container-fluid h-500 d-flex flex-column">
+          <div class="row flex-grow-1 bg-white d-flex justify-content-center align-items-center ak_first_p">
+            <div class="col-12 text-center">
+              <h1>Hello World!</h1>
+            </div>
+          </div>
 
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><a href="#">Вещественные числа. Библиотека cmath</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Операторы цикла while и do-while</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Сокращенное присваивание. Инкремент и декремент. Приоритеты
-                                                    операций</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Цикл While</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Цикл do-while</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Массивы - вставка и удаление</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Двумерные массивы. Введение</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Алгоритмы на двумерных массивах</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Функции</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Отладка кода</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Указатели, передача массивов в функцию</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Адресная арифметика</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Прототипы и перегрузка функций, параметры по умолчанию</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Динамические одномерные массивы</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Динамическое расширение массива</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Спецсимволы, ASCII</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Тип данных char. Работа с символами</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Строки. Введение</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Файлы</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Произвольный доступ к файлам</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Структуры</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Ссылки. Пространства имен</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Управление вводом-выводом</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Классы</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Классы. Методы</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Классы. Геттеры и Сеттеры</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Классы. Конструкторы</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Классы. Наследование</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Классы. Указатель this</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Классы. деструктор и конструктор копирования</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Классы. Перегрузка операции присваивания</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Классы. Перегрузки операций часть 1</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Классы. Перегрузки операций часть 2</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Классы. Перегрузки операций часть 3</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Шаблоны</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Итераторы и операции с указателями</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Algorithm часть 1</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Algorithm часть 2</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+          <div class="row flex-grow-1 ak_second_p">
+            <div class="col-12">
+                <div class="col-md-12 col-sm-12">
+                    <h1>Добро пожаловать в нашу онлайн-библиотеку презентаций по программированию!                    </h1>
+                    <div class="clearfix">
+                        <p class="p-text my-text">
+                            Здесь вы найдете уникальную коллекцию презентаций, посвященных самым актуальным и востребованным темам в области программирования. Мы создали этот ресурс для того, чтобы помочь вам на пути к профессиональному росту и развитию ваших навыков.                        <div class="my-center-img">
+                            <img src="/images/512_to_256.png" class="col-md-6 float-md-start p-1 m-2 my-img" alt="Пример изображения 512 на 256">
                         </div>
+                        <p class="my-text p-text">
+                            Что вы найдете на нашем сайте:
+                        </p>	
+                        <p class="my-text p-text">
+                        ● Большое разнообразие тем: от основ программирования и языков программирования, таких как Python, Java, C++, JavaScript и многих других, до сложных тем, таких как искусственный интеллект, машинное обучение и блокчейн.
+                        </p>	
+                        <p class="my-text p-text">
+                        ● Презентации от экспертов в своей области: наши материалы созданы опытными программистами, учеными и преподавателями, чтобы обеспечить качество и полезность информации.
+                        </p>	
+                        <p class="my-text p-text">
+                        ● Удобный поиск: наша система поиска позволяет легко найти презентацию по интересующей вас теме, используя ключевые слова или фильтры.
+                        </p>
+                        <div class="my-center-img">
+                            <img src="/images/256_to_512.png" style="width: 256px;" class="col-md-6 float-md-end p-1 m-2 my-img" alt="Пример изображения 256 на 512">
+                        </div>
+                        <p class="my-text p-text">
+                        ● Бесплатный доступ: все презентации доступны для бесплатного скачивания и просмотра, чтобы вы могли учиться и развиваться в любое удобное для вас время.
+                        </p>
+                        <p class="my-text p-text">
+                        ● Возможность обмена опытом: мы предлагаем комментировать и оценивать презентации, а также поделиться своими собственными материалами и знаниями с нашим сообществом.
+                        </p>
+                        <p class="my-text p-text">
+                        ● Не ждите – начните исследовать мир программирования прямо сейчас! Зарегистрируйтесь на нашем сайте, чтобы получить доступ ко всем возможностям и стать частью нашего сообщества программистов.
+                        </p>
+                        <p class="my-text p-text">
+                        ● Удачи вам в изучении программирования и добро пожаловать в нашу библиотеку презентаций!
+                        </p>
                     </div>
                 </div>
             </div>
+          </div>
         </div>
-    </main>
+      </main>      
 
-    <footer id="Contacts">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" href="mailto:info@eduapp.online">info@eduapp.online</a>
-            </li> <br>
 
-            <li class="nav-item">
-                <a class="nav-link active" href="https://vk.com/artembirt">Vk</a>
-            </li> <br>
+           
 
-            <li class="nav-item">
-                <a class="nav-link active" href="https://t.me/artem_fril">Telegram</a>
-            </li> <br>
-        </ul>
-    </footer>
+
+
+
 </body>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const setBgGrayHeight = () => {
+        const first_p = document.querySelector(".ak_first_p");
+        if (first_p) {
+            first_p.style.height = window.innerHeight + "px";
+        }
+      };
+  
+      setBgGrayHeight();
+      window.addEventListener("resize", setBgGrayHeight);
+    });
+  </script>  
 </html>
