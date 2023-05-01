@@ -30,6 +30,18 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
+app.get('/courses', (req, res) => {
+    res.render('courses')
+})
+
+app.get('/python', (req, res) => {
+    res.render('python')
+})
+
+app.get('/c', (req, res) => {
+    res.render('c++')
+})
+
 // Загрузка файлов на сервер
 app.use(fileUpload())
 
