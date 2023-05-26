@@ -4,8 +4,24 @@ const fs = require("fs");
 const app = express();
 const PORT = 3000;
 
+// EJS
 app.set("view engine", "ejs");
+
+//Статичная папка
 app.use(express.static("public"));
+
+// Cookie
+const cookieParser = require('cookie-parser') 
+app.use(cookieParser())
+
+// Преобразование данных из буфера в читаемый вид
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+
+// Загрузка файлов на сервер
+app.use(fileUpload())
+
+
 
 // Рендер главной страницы
 app.get(["/", "/index"], (req, res) => {
@@ -31,6 +47,8 @@ app.get("/courses/seti", (req, res) => {
 app.get("/courses/nodejs", (req, res) => {
 	res.render("nodejs");
 });
+
+
 
 app.listen(PORT, () => {
 	console.log("см. тут: http://localhost:" + PORT);
