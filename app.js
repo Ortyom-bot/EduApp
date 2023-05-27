@@ -18,9 +18,6 @@ app.use(cookieParser())
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-// Загрузка файлов на сервер
-app.use(fileUpload())
-
 
 
 // Рендер главной страницы
